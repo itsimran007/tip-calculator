@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="index.js"></script>
+    <title>Tip-Calculator</title>
+  </head>
+  <body>
+    <!-- global container -->
+    <div class="container mx-auto bg-slate-200 mt-10 max-w-xl shadow-2xl rounded">
+      <!-- heading -->
+      <h1 class="text-center text-4xl font-semibold pt-4">Tip Calculator</h1>
+      <!-- guideline -->
+      <p class="text-lg font-medium text-center pt-6">
+        Enter the bill amount and select your prefered tip percentage to
+        calculate the total.
+      </p>
+      <!-- Bill Input -->
+      <div class="flex flex-col items-center mt-8">
+        <p class="pb-2">Bill amount:</p>
+        <input class="border border-gray-400 rounded-md px-4 input_bill" type="number" />
+      </div>
+      <!-- Tip Percentage -->
+      <p class="text-center m-4">Tip percentage:</p>
+      <!-- First Row -->
+      <div class="flex items-center justify-center gap-8">
+        <button class="w-20 border border-rose-300 btn10">10%</button>
+        <button class="w-20 border border-rose-300 btn20">20%</button>
+      </div>
+      <!-- Second Row -->
+      <div class="flex items-center justify-center gap-8 mt-4">
+        <button class="w-20 border border-rose-300 btn30">30%</button>
+        <button class="w-20 border border-rose-300 btn40">40%</button>
+      </div>
+      <!-- <div class="flex items-center justify-center my-4 pb-4">
+        <button class="border bg-blue-500 px-2 py-1 rounded calculate">Calculate</button>
+      </div> -->
+      <p class="text-center mt-8 pb-4 bill"></p>
+      <p class="text-center mt-2 pb-4 tip"></p>
+      <p class="text-center mt-2 pb-4">Total : <span class="total"></span>
+      </p>
+    </div>
+  </body>
+</html>
